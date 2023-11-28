@@ -1,0 +1,33 @@
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 80px 200px;
+    align-items: center;
+    grid-gap: 50px;
+}
+img{
+    object-fit: fill;
+}
+.konten1 {
+    width: 900px;
+    height: 400px;
+    padding: bottom 100px;;
+}
+.konten1 a,p {
+    font-size:medium;
+}
+.card-body{
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@media (max-width:1000px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:800px){
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
